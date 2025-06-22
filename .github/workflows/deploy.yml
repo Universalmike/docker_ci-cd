@@ -1,17 +1,14 @@
-name: Deploy to Render
+name: Trigger Railway Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main2]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-    - name: Trigger Render Deploy Hook
+    - name: Notify Railway
       run: |
-        curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        curl -X POST ${{ secrets.RAILWAY_DEPLOY_HOOK }}
