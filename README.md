@@ -12,11 +12,11 @@ This project is ideal for learning **CI/CD for machine learning** from end-to-en
 
 ## 🏃‍♂️ Quick Start (Local)
 
-### 1️⃣ Train the Model
+### Train the Model
 ```bash
 python train.py
 
-***RUN THE API***
+### RUN THE API
 
 uvicorn main:app --reload
 
@@ -24,7 +24,7 @@ uvicorn main:app --reload
 Visit http://127.0.0.1:8000/docs
  for interactive Swagger UI.
 
-Make a Prediction
+### Make a Prediction
 
 Example curl request:
 
@@ -33,7 +33,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
      -d '{"features": [5.1, 3.5, 1.4, 0.2]}'
 
 
-Run with Docker
+### Run with Docker
 
 Build and run the container:
 
@@ -44,7 +44,7 @@ docker run -p 8000:8000 ml-api
 Open http://127.0.0.1:8000/docs
 .
 
-**CI/CD Workflow**
+### CI/CD Workflow
 
 Continuous Integration (CI) – .github/workflows/ci.yml
 
@@ -63,7 +63,7 @@ Pushes it to Docker Hub / GitHub Container Registry
 Render automatically pulls the latest image and redeploys the live API
 
 
-***Live API***
+### Live API
 
 Base URL: https://<your-render-app-name>.onrender.com
 
@@ -71,36 +71,36 @@ Interactive docs:
 
 https://<your-render-app-name>.onrender.com/docs
 
-***Tech Stack***
+### Tech Stack
 
-Python 3.9
+> Python 3.9
 
-FastAPI – REST API framework
+> FastAPI – REST API framework
 
-scikit-learn – ML model training
+> scikit-learn – ML model training
 
-Docker – Containerization
+> Docker – Containerization
 
-GitHub Actions – CI/CD pipelines
+> GitHub Actions – CI/CD pipelines
 
-Render – Hosting and deployment
+> Render – Hosting and deployment
 
-**Contributing**
+### Contributing
 
 Feel free to fork this repo, open issues, or submit pull requests if you’d like to improve it.
 
-**License**
+### License
 
 This project is released under the MIT License.
 
 
 ---
 
-🔧 **Tip:**  
+### Tip:  
 Replace every `https://<your-render-app-name>.onrender.com` with your actual Render URL so people can try your live endpoint.
 
 
-**Examples showing how a website (JavaScript/React) and a mobile app (Flutter/Dart) can call your live FastAPI endpoint**
+### Examples showing how a website (JavaScript/React) and a mobile app (Flutter/Dart) can call your live FastAPI endpoint
 
 **React Component example**
 
