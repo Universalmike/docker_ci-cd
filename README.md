@@ -10,35 +10,13 @@ A simple **Machine Learning Operations (MLOps)** starter project that shows how 
 
 This project is ideal for learning **CI/CD for machine learning** from end-to-end.
 
----
-
-## 📂 Project Structure
-
-ml_api_cicd/
-│── train.py # Train and save the model
-│── predict.py # Model prediction logic
-│── main.py # FastAPI app
-│── requirements.txt # Python dependencies
-│── Dockerfile # Container definition
-│── tests/
-│ └── test_api.py # Pytest-based API tests
-│── .github/
-│ └── workflows/
-│ ├── ci.yml # CI pipeline: run tests/lint
-│ └── cd.yml # CD pipeline: build & push Docker image
-└── README.md
-
-
-
----
-
 ## 🏃‍♂️ Quick Start (Local)
 
 ### 1️⃣ Train the Model
 ```bash
 python train.py
 
-**RUN THE API**
+***RUN THE API***
 
 uvicorn main:app --reload
 
@@ -85,7 +63,7 @@ Pushes it to Docker Hub / GitHub Container Registry
 Render automatically pulls the latest image and redeploys the live API
 
 
-**Live API**
+***Live API***
 
 Base URL: https://<your-render-app-name>.onrender.com
 
@@ -93,7 +71,7 @@ Interactive docs:
 
 https://<your-render-app-name>.onrender.com/docs
 
-**Tech Stack**
+***Tech Stack***
 
 Python 3.9
 
