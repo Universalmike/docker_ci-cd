@@ -7,7 +7,11 @@ import numpy as np
 class IrisInput(BaseModel):
     features: list
 
-app = FastAPI()
+app = FastAPI(
+    title="Iris Predictor",
+    description="PredictsIris Flower Types",
+    version="1.0.0"
+)
 model = joblib.load("models/iris.pkl")
 
 @app.get("/")
@@ -19,5 +23,6 @@ def predict(data: IrisInput):
     input_data = np.array(data.features).reshape(1, -1)
     prediction = model.predict(input_data)
     return {"prediction": int(prediction[0])}
+
 
 
