@@ -93,14 +93,11 @@ Feel free to fork this repo, open issues, or submit pull requests if you’d lik
 
 This project is released under the MIT License.
 
-
----
-
 ### Tip:  
 Replace every `https://<your-render-app-name>.onrender.com` with your actual Render URL so people can try your live endpoint.
 
 
-### Examples showing how a website (JavaScript/React) and a mobile app (Flutter/Dart) can call your live FastAPI endpoint
+### Examples showing how a website (JavaScript/React) can call your live FastAPI endpoint
 
 **React Component example**
 
